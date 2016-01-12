@@ -1,0 +1,53 @@
+
+/*external font link*/
+body {
+	font-family: 'Nobile', sans-serif;
+}
+
+
+/*nav styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0096d2;	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*tile styling*/
+.tile {
+    display: inline-block;
+    height: auto;
+    margin: 1px;
+    background-color: #b0e0e6;
+    float: left;  
+}
+
+.tile blog {
+	display: inline-block;
+    height: auto;
+    margin: 0;
+    background-color: #b0e0e6;
+    float: center;  
+}
+
+.tile footer {
+	float: clear both;
+}
