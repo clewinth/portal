@@ -89,6 +89,16 @@ Developer @GA in DC
 	width: 100px;
 }
 
+
+.readmore, .readless {
+	text-align: right;
+	margin-top: 30px;
+}
+.readmore a, .readless a {
+	color: #043049;
+	font-weight: 600;
+}
+
 @media all and (min-width: 600px) {
 	.aside { flex: 1 auto; }
 }
@@ -120,7 +130,7 @@ body {
 
 .wrapper {
 	max-width: 1280px;
-	margin: 1rem;
+	margin: .5rem;
 }
 
 .wrappernew {
@@ -129,9 +139,18 @@ body {
 	margin: .5rem;
 }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.75em;
+	font-size: 1.25em;
 	line-height: 1;
 	color: white;
 }
@@ -139,18 +158,30 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.25em;
 	font-weight: bold;
-	line-height: 1.5;
+	line-height: 1;
 }
 h3 {
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1em;
+	font-size: .85em;
 	font-weight: bold;
 	font-color: white;
 }
 p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	margin: 1em;
+	font-size: 12px;
+	margin: .75em;
+}
+
+nav .line{
+	width: .9em;
+	height: .15em;
+	background: white;
+	border-radius: 1em;
+	margin-top: .25em;
+	margin-bottom: .25em;
+}
+nav .line:first-of-type{
+	margin-top:.7em;
 }
 
 .roboto {
@@ -162,19 +193,19 @@ p {
 label {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-style: italic;
-    float: left;
-    width: 150px;
-    text-align: right;
-    margin-right: 0.5em;
+	float: left;
+	width: 150px;
+	text-align: right;
+	margin-right: 0.5em;
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
 }
 .form-field-no-caption {
-    margin-left: 150px;
-    padding-left: 0.5em;
+	margin-left: 150px;
+	padding-left: 0.5em;
 }
 
 .page-header {
@@ -197,7 +228,7 @@ label {
 }
 .page-header nav {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
+	font-size: 18	px;
 	color: white;
 	float: right;
 	margin: 1px 0 0 0;
@@ -234,6 +265,7 @@ label {
 	padding: 1% 0;
 }
 .tout {
+	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
 	padding: 1%;
 }
@@ -257,16 +289,6 @@ label {
 	border: none;
 }
 
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -280,19 +302,56 @@ footer {
 }
 
 @media (min-width: 768px) {
+	h1 {
+		font-size: 1.75em;
+	}
+	h2 {
+		font-size: 1.25em;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	h3 {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 1em;
+	}
+	p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		margin: 1em;
+	}
+	.page-header nav {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		color: white;
+		float: right;
+		margin: 1px 0 0 0;
+	}
+
 	.tout {
+		text-align: left;
 		float: left;
 		width: 33.3333%;
 	}
 	.story {
 		width: 100%;
 	}
-	.burger {
-		display: none;
-	}
-	.page-header nav li {
+	
+	label {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-style: italic;
 		float: left;
-		display: block;
+		width: 150px;
+		text-align: right;
+		margin-right: 0.5em;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+	}
+	.form-field-no-caption {
+		margin-left: 150px;
+		padding-left: 0.5em;
 	}
 }
 
@@ -319,3 +378,4 @@ footer {
 	position:relative;
 	top:1px;
 }
+
