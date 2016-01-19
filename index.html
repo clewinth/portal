@@ -2,119 +2,293 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
-	<title>Administrative Services</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Administrative Services</title>
+
+	<!-- external font link -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic|Raleway:800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header id="page-header">
-		<div class="wrapper">
-			<h1><a href="index.html">Administrative Services</a></h1>
+	<header class="page-header">
+		<h1><a href="index.html"><h2>Administrative Services</a></h2>
 			<nav>
-				<ul>
-					<li><div class="line"></div><div class="line"></div><div class="line"></div></li>
-					<li><a href="developers.html">Human Resources</a></li>
-					<li><a href="designers.html">Facilities</a></li>			
-					<li><a href="how.html">Training &amp Development</a></li>			
-					<li><a href="team.html">Library</a></li>			
-					<li><a href="blog.html">About Us</a></li>			
+				<button class='burger'>☰</button>
+				<ul class="navigation">
+					<li><a href="#">Human Resources</a></li>
+					<li><a href="#">Facilities</a></li>
+					<li><a href="#">Training &amp; Development</a></li>
+					<li><a href="#">Library</a></li>
+					<li><a href="#">About Us</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-</section>
 
-<div class="items">
-	<div class="square">
-		<div class="content">
-			Policies
-		</div>
+
+	<div class="wrapper">
+		<aside class="aside aside-1"><h1>Policies</h1></aside>
+		<aside class="aside aside-2"><h1>Benefits</h1></aside>
+		<aside class="aside aside-3"><h1>Recruitment</h1></aside>
+		<aside class="aside aside-4"><h1>Getting Paid</h1></aside>
+		<aside class="aside aside-5"><h1>Forms</h1></aside>  
 	</div>
-	<div class="squaregold">
-		<div class="content">
-			Benefits
-		</div>
-	</div>
-	<div class="squarepink">
-		<div class="content">
-			Jobs
-		</div>
-	</div>
-	<div class="squaregreen">
-		<div class="content">
-			Getting Paid
-		</div>
-	</div>
-	<div class="squarered">
-		<div class="content">
-			Forms	
-		</div>
-	</div>
-</div>
+
+	<div class="wrappernew">
+		<section class="touts">
+			<section class="tout">
+				<header>
+					<h3>Change Your Schedule</h3>
+				</header>
+				<hr>
+				<form id="frm1" action="form_action.asp">
+					<label>Last Name:</label>
+					<input type="text" name="lname"><br>
+
+					<label>First Name:</label>
+					<input type="text" name="fname"><br>
+
+					<label>Effective date:</label>
+					<input id="date" name="date" /><br>
+
+					<label>New schedule:</label>
+					<input type="radio"/>100% FTE<br/>
+					<span class="form-field-no-caption"><input type="radio"/>80% FTE</span><br/>
+					<span class="form-field-no-caption"><input type="radio"/>75% FTE</span><br/>
+					<span class="form-field-no-caption"><input type="radio"/>60% FTE</span><br/>
+					<span class="form-field-no-caption"><input type="radio"/>50% FTE</span><br/>
+
+					<span class="form-field-no-caption">
+						<a href="#" class="myButton">Hit me!</a>
+					</form>
+				</section>
+				<section class="tout">
+					<header>
+						<h3>Change Your Address</h3>
+						<hr>
+					</header>
+					<form id="frm2" action="form_action.asp">
+
+						<label>Last Name:</label>
+						<input type="text" name="lname"><br>
+
+						<label>First Name:</label>
+						<input type="text" name="fname"><br>
+
+						<label>Effective date:</label>
+						<input id="date" name="date" /><br>
+
+						<label>Address 1:</label>
+						<input type="text" name="address1"><br>
+
+						<label>Address 2:</label>
+						<input type="text" name="address2"><br>
+
+						<label>City:</label>
+						<input type="text" name="city"><br>
+
+						<label>State:</label>
+						<input type="text" name="state"><br>
+
+						<label>Zip Code:</label>
+						<input type="number" name="zip"><br>
+
+						<span class="form-field-no-caption">
+							<a href="#" class="myButton">Let 'er rip!</a>
+						</form>	
+					</section>
+					<section class="tout">
+						<header>
+							<h3>Change Your Commuting Deduction</h3>
+							<hr>
+						</header>
+						<form id="frm3" action="form_action.asp">
+
+							<label>Last name:</label>
+							<input type="text" name="lname"><br>
+
+							<label>First Name:</label>
+							<input type="text" name="fname"><br>
+
+							<label>Effective month:</label>
+							<input id="month" name="month" ><br>
+
+							<label>Transit Amount:</label>
+							<input type="text" name="address1"><br>
+
+							<label>Parking Amount:</label>
+							<input type="text" name="address2"><br>
+
+							<label>Total:</label>
+							<input type="text" name="city"><br>
+
+							<span class="form-field-no-caption">
+								<a href="#" class="myButton">Go for it!</a>
+							</form>	
+						</section>
+					</div>
+
+					<div class="wrapper">
+						<section class="touts">
+							<section class="story">
+								<h2>Our Blog</h2>
+								<h3>What's going on around the company</h3>
+								<p>Read on...</p>	
+							</section>
+						</section>
+					</div>
+
+					<div class="wrappernew">
+						<section class="touts">
+							<section class="tout">
+								<header>
+									<h2>Policies</h2>
+								</header>
+								<ul>	
+									<li><a href="#">Introduction &amp; Disclaimer</a></li>
+									<li><a href="#">Equal Employment Opportunity</a></li>
+									<li><a href="#">Hours of Work &amp; Overtime</a></li>
+									<li><a href="#">Termination of Employment</a></li>
+									<li><a href="#">Outside Work Activity</a></li>
+								</ul>
+							</section>
+							<section class="tout">
+								<header>
+									<h2>Benefits</h2>
+								</header>
+								<ol>	
+									<li><a href="#">Health Insurance</a></li>
+									<li><a href="#">Dental Insurance</a></li>
+									<li><a href="#">Vision Insurance</a></li>
+									<li><a href="#">Paid Time Off</a></li>
+									<li><a href="#">Holidays</a></li>
+								</ol>
+							</section>
+							<section class="tout">
+								<header>
+									<h2>Getting Paid</h2>
+								</header>
+								<p class="p roboto">You are paid bi-weekly via direct deposit to your bank account.</p>
+							</section>
+						</section>
+					</div>
+
+					<div class="wrapper">
+						<section class="touts">
+							<section class="story">
+								<h2>Feature of the Month: Supervisor Training</h2>
+								<p>Lorem ipsum dolor sit amet, natoque sociis erat nullam et, nec velit, malesuada mauris vel, amet lorem, ultricies consectetuer non nunc. Pharetra nec aenean facilisis, arcu elit pharetra, ante ut vitae ante integer ut, dignissim eros integer diam congue augue praesent, ante turpis faucibus molestie posuere. Eget donec imperdiet nulla et mauris sit, at sed nunc a porta risus proin. Ullamcorper vitae condimentum purus tempor, placerat cursus lorem quam et.</p>
+							</section>
+						</section>
+					</div>
+
+					<footer class="footer"><a href="#"><h3>Back to top</h3></footer>
+
+				</body>
+				</html>
+
+<!-- Use HTML5 structural elements (header, footer, nav, footer)
+Demonstrate a correct use of classes and  IDs Use classes to identify a type of element and IDs for identifying a specific unique element on the page
+Select the appropriate tags to markup content
+Apply fonts, color and styles to elements and the page
+Demonstrate use of floats (or inline-block) and the box model
+Use JavaScript/jQuery to make pages interactive -->
+
+<!-- We recommend you take a look at the [GA Gallery](http:/gallery.ga.co) for examples of past student work.
+
+<br>
+Use HTML to correctly structure the DOM
+*	Use HTML5 structural elements (header, footer, nav, etc).
+*	Demonstrate correct use of classes and IDs.
+*	Use classes for identifying a type of element, and IDs for identifying a specific unique element on the page.
+*	Select appropriate tags to markup content.
 
 
-
-<div class="items">
-	<div class="item">Side Content</div>
-	<div class="item">Large Content</div>
-	<div class="item">Other</div>
-</div>
-
-<div class="wrapper">
-	<section class="touts">
-		<section class="story">
-			<h3>Facilities</h3>
-			<p>Lorem ipsum dolor sit amet, natoque sociis erat nullam et, nec velit, malesuada mauris vel, amet lorem, ultricies consectetuer non nunc. Pharetra nec aenean facilisis, arcu elit pharetra, ante ut vitae ante integer ut, dignissim eros integer diam congue augue praesent, ante turpis faucibus molestie posuere. Eget donec imperdiet nulla et mauris sit, at sed nunc a porta risus proin. Ullamcorper vitae condimentum purus tempor, placerat cursus lorem quam et. Suspendisse rerum.</p>
-		</section>
-		<div class="items">
-			<div class="item">Side Content</div>
-			<div class="item">Other</div>
-			<div class="item">Mid Content</div>
-
-		</div>
-
-	</section>
-</div>
-
-<div class="items">
-	<div class="item">Side Content</div>
-	<div class="item">Mid Content</div>
-	<div class="item">Large Content</div>
-	<div class="item">Other</div>
-</div>
-
-<div class="wrapper">
-	<section class="touts">
-		<section class="story">
-			<h3>Training &amp Development</h3>
-			<p>Lorem ipsum dolor sit amet, natoque sociis erat nullam et, nec velit, malesuada mauris vel, amet lorem, ultricies consectetuer non nunc. Pharetra nec aenean facilisis, arcu elit pharetra, ante ut vitae ante integer ut, dignissim eros integer diam congue augue praesent, ante turpis faucibus molestie posuere. Eget donec imperdiet nulla et mauris sit, at sed nunc a porta risus proin. Ullamcorper vitae condimentum purus tempor, placerat cursus lorem quam et. Suspendisse rerum.</p>
-		</section>
-		<div class="items">
-			<div class="item">Side Content</div>
-			<div class="item">Other</div>
-			<div class="item">Mid Content</div>
-
-		</div>
-
-	</section>
-</div>
+---
 
 
-<div class="wrapper">
-	<section class="touts">
-		<section class="story">
-			<h3>Library</h3>
-			<p>Lorem ipsum dolor sit amet, natoque sociis erat nullam et, nec velit, malesuada mauris vel, amet lorem, ultricies consectetuer non nunc. Pharetra nec aenean facilisis, arcu elit pharetra, ante ut vitae ante integer ut, dignissim eros integer diam congue augue praesent, ante turpis faucibus molestie posuere. Eget donec imperdiet nulla et mauris sit, at sed nunc a porta risus proin. Ullamcorper vitae condimentum purus tempor, placerat cursus lorem quam et. Suspendisse rerum.</p>
-		</section>
-	</section>
-</div>
+###Real-World Applications
+
+- Demonstrate an understanding of all topics covered during this course:
+
+- Structure, design, and style your site with HTML and CSS
+- Use JavaScript and jQuery to make your site interactive
+- Combine technical and design skills to create a responsive website that is compatible with mobile devices
+
+- Apply knowledge gained during this course by building a website from scratch.
+- Use your creativity! Instructors will validate feasibility and manage scope.
 
 
+<br>
 
-<footer class="footer">Administrative Services</footer>	
-<script src="js/main.js"></script>
-</body>
-</html>
+---
+
+
+###Technical Requirements 
+
+- Demonstrate that you have taken the appropriate steps to plan and build your website by submitting all milestones by their due dates:
+- Project Proposal / Wireframes 
+- Draft of HTML / CSS (no JS) 
+- First draft of JS 
+- Updated Rough Draft 
+
+- Use HTML to correctly structure the DOM:
+- Use HTML5 structural elements (header, footer, nav, footer)
+- Demonstrate a correct use of classes and IDs
+- Use classes to identify a type of element and IDs for identifying a specific unique element on the page
+- Select the appropriate tags to markup content
+
+- Use CSS to style the page:
+- Apply fonts, color and styles to elements and the page
+- Demonstrate use of floats (or inline-block) and the box model
+
+- Use JavaScript/jQuery to make pages interactive
+
+
+####Bonus / Best Practices
+
+Your instructional team will provide feedback on how well you execute best practices. Even though it is not part of the requirements, you should keep these in mind:
+
+- __Clean And Readable Code__. The instructional team should be able to read and follow your code easily.  Maintain clean and readable code including: consistent indentation, code commenting (e.g. when closing ```<div>``` tags, demarcating sections of code, describing possibly ambiguous code choices) and use of proper and consistent naming conventions.
+
+- __Search Engine Optimization (SEO)__. Implement SEO best practices related to HTML markup, and content optimization.
+
+- __Avoid deprecated tags__. Uses best practices and build using only supported HTML and CSS tags.
+
+<br>
+
+---
+
+###Timeline
+
+| Milestone        | Due Date           | Deliverable  |
+| ------------- |:-------------:| -----:|
+| Milestone 1 | Week 05 | Project Proposal / Wireframes |
+| Milestone 2 | Week 07 | Draft of HTML / CSS (no JS) |
+| Milestone 3 | Week 08 | First draft of JS |
+| Milestone 4 | Week 09 | Updated Rough Draft |
+| Milestone 5 | Week 10 | Final Presentation |
+
+---
+
+##Hosting
+
+You can host your final project on the web for free, using GitHub pages. Watch [this video](https://generalassembly.wistia.com/medias/jn23v1hc93) and see [this getting started guide](Getting_Started_with_GitHub_Pages.pdf) for more information on how to host your site on GitHub pages. If you run into any problems with GitHub pages, your instructor and TA(s) should be able to help you troubleshoot.
+
+###Resources
+
+
+- http://gallery.ga.co
+
+
+<br>
+
+---
+
+###Evaluation / Submission
+
+Students will create a new repository on GitHub for their final project and push their code to this new repository when they are ready to submit. The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2).  **Note**: If bullet points have child bullets, the instructional team should grade the child bullets and not the parent bullet belonging to the child. The maximum possible score on this assignment is 22/22. Bonus sections are completely optional. -->
