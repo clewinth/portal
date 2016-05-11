@@ -1,2 +1,0 @@
-# portal
-Employee portal project
